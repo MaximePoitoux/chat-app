@@ -6,14 +6,12 @@ import PropTypes from 'prop-types';
 function Contact(props) {
   return (
     <div className="Contact">
-        <img class="avatar" src={picture} alt="logo"/>
+        <img className="avatar" src={props.picture} alt="logo"></img>
         <div>
-            <div class="nom_status">
-                <h4 class="name">{pseudo}</h4>
-                    <div class="status">
-                        <div class="status-online"></div>
-                        <div class="status-text">{connect ? "Online" : "Offline"}</div>
-                    </div>
+            <h4 className="name">{props.pseudo}</h4>
+            <div className="status">
+                    <div className={props.online ? "status-online" : "status-offline"}></div>
+                    <div className="status-text">{props.connect ? 'online' : 'offline'}</div>
             </div>
         </div>
     </div>
@@ -21,8 +19,11 @@ function Contact(props) {
 }
 
 
-QuoteCard.propTypes = {
-    characterFirstName: PropTypes.string.isRequired,
-    characterLastName: PropTypes.string.isRequired,
+
+Contact.propTypes = {
+    picture: PropTypes.string,
+    pseudo: PropTypes.string,
+    connect: PropTypes.string,
   };
+  
 export default Contact;

@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
 
-      <Contact 
+      {/* <Contact 
       picture="https://randomuser.me/api/portraits/women/4.jpg"
       pseudo="Lorraine Reynolds" 
       connect
@@ -20,7 +20,9 @@ function App() {
       picture="https://randomuser.me/api/portraits/men/1.jpg"
       pseudo="Noah Wood" 
       connect
-      /> 
+      />  */}
+
+      <ContactList />
 
     </div>
   );

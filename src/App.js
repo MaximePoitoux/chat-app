@@ -7,7 +7,8 @@ function App() {
 
       <Contact 
       picture="https://randomuser.me/api/portraits/women/4.jpg"
-      pseudo="Lorraine Reynolds" connect online
+      pseudo="Lorraine Reynolds" 
+      connect
       />
 
       <Contact 
@@ -17,7 +18,8 @@ function App() {
 
       <Contact
       picture="https://randomuser.me/api/portraits/men/1.jpg"
-      pseudo="Noah Wood" connect online
+      pseudo="Noah Wood" 
+      connect
       /> 
 
     </div>

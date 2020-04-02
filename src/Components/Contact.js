@@ -10,7 +10,7 @@ function Contact(props) {
         <div>
             <h4 className="name">{props.pseudo}</h4>
             <div className="status">
-                    <div className={props.online ? "status-online" : "status-offline"}></div>
+                    <div className={props.connect ? "status-online" : "status-offline"}></div>
                     <div className="status-text">{props.connect ? 'online' : 'offline'}</div>
             </div>
         </div>
@@ -23,7 +23,7 @@ function Contact(props) {
 Contact.propTypes = {
     picture: PropTypes.string,
     pseudo: PropTypes.string,
-    connect: PropTypes.string,
+    connect: PropTypes.bool,
   };
   
 export default Contact;
